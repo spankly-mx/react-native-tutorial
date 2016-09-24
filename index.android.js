@@ -15,17 +15,26 @@ import {
 var  Apple  =  require('./App/Components/Apple');
 var Greeting = require('./App/Components/Greeting');
 var Blink = require('./App/Components/Blink');
+var Pizza = require('./App/Components/PizzaTranslator');
+var ListViewBasics = require('./App/Components/ListViewBasics');
 
 class AwesomeProject extends Component {
   render() {
     return (
         <View>
-          <Text>Hello world </Text>
-          <Apple></Apple>
-          <Greeting name="Fulano" />
-          <Greeting name="Mengano" />
-          <Blink text="Hello world!"/>
-          <Blink text="Pensamiento magico" />
+          <ListViewBasics />
+          {
+            /*
+             <Text>Hello world </Text>
+             <Apple></Apple>
+             <Greeting name="Fulano" />
+             <Greeting name="Mengano" />
+             <Blink text="Hello world!"/>
+             <Blink text="Pensamiento magico" />
+             <View style={{width: 150, height: 150, backgroundColor: 'steelblue'}} />
+             <Pizza />
+             */
+          }
        </View>
     );
   }
